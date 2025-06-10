@@ -33,8 +33,11 @@
         <li class="nav-item">
           <a class="nav-link" href="/account">Mon compte</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-show="disconnected">
           <a class="nav-link" href="/signin">Connexion</a>
+        </li>
+        <li class="nav-item" data-show="connected">
+          <button class="nav-link" id="signout-Btn">Déconnexion</button>
         </li>
       </ul>
     </div>
@@ -43,7 +46,7 @@
 </header>
 
     <main id="main-page">
-    ><!--le contenue de la page sera injécté ici-->
+    <!--le contenue de la page sera injécté ici-->
 </main>
 
 <footer class="bg-dark text-white text-center footer">
@@ -66,6 +69,7 @@
    
 
 </footer>
+<script src="js/script.js"></script>
 <script type="module" src="routeur/router.js"></script> 
 <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
 
